@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:background="@drawable/BG"
+    android:weightSum="100"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:id="@+id/login_layout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shindy"
+        android:gravity="center"
+        android:textSize="@dimen/largeUIText"
+        android:textColor="#000000"
+        android:id="@+id/title" />
+    <TextView
+        android:text=" Unique Events for Singles"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/subtitle"
+        android:textSize="@dimen/mediumUIText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="Email"
+            android:textColorHint="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/loginEmail_field"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="Password"
+            android:gravity="left"
+            android:textColorHint="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/loginPassword_field"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:inputType="textPassword" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/login_button"
+            android:textColor="#FFFFFF"
+            android:padding="20dp"
+            android:id="@+id/login_button" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@drawable/fbLogin_button"
+            android:textColor="#FFFFFF"
+            android:padding="20dp"
+            android:id="@+id/fbLogin_button"
+            android:text="LOGIN WITH FACEBOOK" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:id="@+id/lostPass_button"
+            android:text="Lost Password?"
+            android:gravity="center" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:id="@+id/signUp_button"
+            android:text="Sign Up for free"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

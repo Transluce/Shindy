@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string-array name="menu_items">
+    <item>My Shindigs</item>
+    <item>My Messages</item>
+    <item>My Shindiggers</item>
+    <item>Extreme Events</item>
+    <item>Users Management</item>
+    <item>Event Management</item>
+    <item>Profile and Preferences</item>
+    <item>Premium Account</item>
+    <item>Logout</item>
+  </string-array>
+</resources>

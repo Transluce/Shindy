@@ -1,0 +1,1 @@
+<StackLayout><Label /><BoxView HeightRequest="100" BackgroundColor="Black" HorizontalOptions="FillAndExpand" /><Label /></StackLayout>

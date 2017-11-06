@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+      android:id="@+id/myShindigs_menu"
+      android:title="My Shindigs"
+      android:icon="@drawable/ic_shindigs"
+      android:tint="#434343"/>
+    <item
+      android:id="@+id/myMessages_menu"
+      android:title="My Messages"
+      android:icon="@drawable/ic_messages"
+      android:tint="#434343"/>
+    <item
+      android:id="@+id/myShindiggers_menu"
+      android:title="My Shindiggers"
+      android:icon="@drawable/ic_shindiggers"
+      android:tint="#434343"/>
+    <item
+      android:id="@+id/extremeEvents_menu"
+      android:title="Extreme Events"
+      android:icon="@drawable/ic_extremeEvents"
+      android:tint="#434343"/>
+  </group>
+  <item
+    android:title="Settings">
+    <menu>
+      <item
+     android:id="@+id/userMgmt_menu"
+     android:title="User Management"
+     android:icon="@drawable/ic_userMgmt"
+     android:tint="#434343"/>
+      <item
+        android:id="@+id/eventMgmt_menu"
+        android:title="Event Management"
+        android:icon="@drawable/ic_evenMgmt"
+        android:tint="#434343"/>
+      <item
+        android:id="@+id/profilePref_menu"
+        android:title="Profile and Preferences"
+        android:icon="@drawable/ic_profilePref"
+        android:tint="#434343"/>
+      <item
+        android:id="@+id/premiumAcc_menu"
+        android:title="Premium Account"
+        android:icon="@drawable/ic_premiumAcc"
+        android:tint="#434343"/>
+    
+    </menu>
+  </item>
+</menu>

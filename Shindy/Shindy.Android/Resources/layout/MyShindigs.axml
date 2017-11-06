@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:animateLayoutChanges="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Below are events that you have been invited to by us, friends or other single shindiggers that dig you."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                fontPath="fonts/Roboto-LightItalic.tff"
+                android:textColor="#808080"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/myShindigsTip_label" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:id="@+id/linearLayout2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#808080"
+                    android:id="@+id/textView2"
+                    android:layout_weight="60" />
+                <Button
+                    android:text="Invite Code?"
+                    android:textColor="#689ACA"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/inviteCode_button"
+                    android:layout_weight="40" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENTS YOU'RE ATTENDING"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#808080"
+                    android:id="@+id/events_label" />
+                <Button
+                    android:background="@drawable/card"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="100"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/events_container"
+                android:orientation="vertical" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INVITED"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#808080"
+                    android:id="@+id/invites_label" />
+                <Button
+                    android:background="@drawable/card"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="100"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/invites_container"
+                android:orientation="vertical" />
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
