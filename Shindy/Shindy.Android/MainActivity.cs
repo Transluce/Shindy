@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Graphics;
 using Android.Content;
 using Android.Views.InputMethods;
+using Android.Preferences;
+using Java.IO;
 
 namespace Shindy.Droid
 {
@@ -17,6 +19,7 @@ namespace Shindy.Droid
 	{
         LinearLayout mLinearLayout;
         Button signUp_button,login_button;
+        public static string ip;
 		protected override void OnCreate (Bundle bundle)
 		{
 			
@@ -26,14 +29,37 @@ namespace Shindy.Droid
 			LoadApplication (new Shindy.App ());
             SetTheme(Resource.Style.ShindyLoginTheme);
             SetContentView(Resource.Layout.Login);
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(Application.Context);
             SetFont();
             mLinearLayout = FindViewById<LinearLayout>(Resource.Id.login_layout);
             signUp_button = FindViewById<Button>(Resource.Id.signUp_button);
             login_button = FindViewById<Button>(Resource.Id.login_button);
-
+            
             mLinearLayout.Click += MLinearLayout_Click;
             login_button.Click += Login_button_Click;
             signUp_button.Click += MBtn_SignUp_Click;
+        }
+        private void initializeConfig()
+        {
+            // Checks if ip is stored
+            File config = new File(Application.GetExternalFilesDir(null), "config.txt");
+            if (config.Exists())
+            {
+                BufferedReader read = new BufferedReader(new FileReader(config));
+                ip = read.ReadLine();
+            }
+            else
+            {
+                try
+                {
+                    config.CreateNewFile();
+                    FileWriter fw = new FileWriter(config);
+                    fw.Write("192.168.1.5");
+                    fw.Close();
+                }
+                catch (IOException) { }
+                ip = "192.168.1.5";
+            }
         }
         //keyboard modifications
         private void MLinearLayout_Click(object sender, EventArgs e)
@@ -83,6 +109,7 @@ namespace Shindy.Droid
             {
                 textviews[i].SetTypeface(font_thin, TypefaceStyle.Normal);
             }
+            initializeConfig();
         }
 	}
 }

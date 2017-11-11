@@ -41,7 +41,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="85"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:background="@drawable/card" />
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="match_parent"

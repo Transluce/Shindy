@@ -37,7 +37,7 @@
                 <Button
                     android:text="Invite Code?"
                     android:textColor="#689ACA"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
                     android:background="@android:color/transparent"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"

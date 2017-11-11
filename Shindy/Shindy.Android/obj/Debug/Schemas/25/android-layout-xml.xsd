@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>11/7/2017 4:20:31 AM</xs:documentation>
+    <xs:documentation>11/9/2017 5:55:05 AM</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,10 +82,13 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
+      <xs:element ref="Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer" />
       <xs:element ref="de.hdodenhof.circleimageview.CircleImageView" />
       <xs:element ref="Refractored.Controls.CircleImageView" />
       <xs:element ref="com.xamarin.forms.platform.android.FormsViewGroup" />
-      <xs:element ref="Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer" />
+      <xs:element ref="com.google.android.gms.common.SignInButton" />
+      <xs:element ref="com.google.android.gms.maps.StreetViewPanoramaView" />
+      <xs:element ref="com.google.android.gms.maps.MapView" />
       <xs:element ref="android.support.design.widget.TextInputEditText" />
       <xs:element ref="android.support.design.widget.TabItem" />
       <xs:element ref="android.support.design.widget.NavigationView" />
@@ -122,6 +125,7 @@
       <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
       <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
       <xs:element ref="android.support.v7.view.menu.ActionMenuItemView" />
+      <xs:element ref="android.support.v7.app.MediaRouteButton" />
       <xs:element ref="android.support.v7.widget.ViewStubCompat" />
       <xs:element ref="android.support.v7.widget.SwitchCompat" />
       <xs:element ref="android.support.v7.widget.SearchView" />
@@ -147,7 +151,7 @@
       <xs:element ref="android.support.v7.widget.Toolbar" />
       <xs:element ref="android.support.v7.widget.CardView" />
       <xs:element ref="android.support.v7.widget.RecyclerView" />
-      <xs:element ref="android.support.v7.app.MediaRouteButton" />
+      <xs:element ref="Shindy.Droid.WrapContentViewPager" />
       <xs:element ref="include" />
     </xs:choice>
   </xs:group>
@@ -1467,6 +1471,16 @@
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
+  <xs:element name="Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer" type="Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:element name="de.hdodenhof.circleimageview.CircleImageView" type="de.hdodenhof.circleimageview.CircleImageView">
     <xs:annotation>
       <xs:documentation>Runtime Type: Refractored.Controls._BaseCircleImageView</xs:documentation>
@@ -1507,14 +1521,38 @@
       <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer" type="Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer">
+  <xs:element name="com.google.android.gms.common.SignInButton" type="com.google.android.gms.common.SignInButton">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Gms.Common.SignInButton</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer">
+  <xs:complexType name="com.google.android.gms.common.SignInButton">
     <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
+      <xs:extension base="FrameLayout">
+        <xs:attribute ref="app:buttonSize" />
+        <xs:attribute ref="app:colorScheme" />
+        <xs:attribute ref="app:scopeUris" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.maps.StreetViewPanoramaView" type="com.google.android.gms.maps.StreetViewPanoramaView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Maps.StreetViewPanoramaView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.maps.StreetViewPanoramaView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.google.android.gms.maps.MapView" type="com.google.android.gms.maps.MapView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Gms.Maps.MapView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.google.android.gms.maps.MapView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.design.widget.TextInputEditText" type="android.support.design.widget.TextInputEditText">
@@ -1964,6 +2002,19 @@
       <xs:extension base="TextView" />
     </xs:complexContent>
   </xs:complexType>
+  <xs:element name="android.support.v7.app.MediaRouteButton" type="android.support.v7.app.MediaRouteButton">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V7.App.MediaRouteButton</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v7.app.MediaRouteButton">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View">
+        <xs:attribute ref="app:externalRouteEnabledDrawable" />
+        <xs:attribute ref="app:buttonTint" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:element name="android.support.v7.widget.ViewStubCompat" type="android.support.v7.widget.ViewStubCompat">
     <xs:annotation>
       <xs:documentation>Runtime Type: Android.Support.V7.Widget.ViewStubCompat</xs:documentation>
@@ -2296,17 +2347,14 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.app.MediaRouteButton" type="android.support.v7.app.MediaRouteButton">
+  <xs:element name="Shindy.Droid.WrapContentViewPager" type="Shindy.Droid.WrapContentViewPager">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.App.MediaRouteButton</xs:documentation>
+      <xs:documentation>Runtime Type: Shindy.Droid.WrapContentViewPager</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.app.MediaRouteButton">
+  <xs:complexType name="Shindy.Droid.WrapContentViewPager">
     <xs:complexContent mixed="false">
-      <xs:extension base="View">
-        <xs:attribute ref="app:externalRouteEnabledDrawable" />
-        <xs:attribute ref="app:buttonTint" />
-      </xs:extension>
+      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="include" type="include">

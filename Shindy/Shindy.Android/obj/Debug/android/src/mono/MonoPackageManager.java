@@ -101,6 +101,7 @@ class MonoPackageManager_Resources {
 		"Shindy.Android.dll",
 		"CalligraphyBindings.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Refractored.Controls.CircleImageView.dll",
 		"Rg.Plugins.Popup.dll",
 		"Rg.Plugins.Popup.Droid.dll",
@@ -125,6 +126,10 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Tasks.dll",
+		"Xamarin.GooglePlayServices.Base.dll",
+		"Xamarin.GooglePlayServices.Maps.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

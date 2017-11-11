@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:background="@drawable/card"
+    android:paddingBottom="10dp">
+    <Refractored.Controls.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:id="@+id/circleImageView1"
+        android:src="@drawable/profilePic" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="@dimen/smallUIText"
+            android:textColor="#808080" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invited Anonymously"
+            android:textSize="@dimen/smallUIText"
+            android:textColor="#808080"
+            android:id="@+id/textView1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offered to pay"
+            android:textSize="@dimen/smallUIText"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+    <Button
+        android:text="Uninvite"
+        android:textSize="@dimen/smallUIText"
+        android:textColor="#808080"
+        android:background="@drawable/borderOnly_button"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:visibility="visible" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:id="@+id/confirmed_layout"
+        android:weightSum="100"
+        android:visibility="gone">
+        <ImageView
+            android:src="@drawable/ic_check"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/imageView1"
+            android:layout_weight="100"
+            android:tint="#ff12dd0d" />
+        <TextView
+            android:text="Confirmed"
+            android:textSize="@dimen/smallUIText"
+            android:textColor="#12DD0D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

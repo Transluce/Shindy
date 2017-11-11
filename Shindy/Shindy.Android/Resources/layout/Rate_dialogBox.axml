@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:animateLayoutChanges="true">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_button"
+        android:src="@drawable/ic_close"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:tint="#ff808080"
+        android:layout_gravity="right"
+        android:scaleX="0.7"
+        android:scaleY="0.7" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/reviewRateContainer"
+        android:gravity="center"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate this event"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#808080"
+            android:id="@+id/textView1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="50"
+            android:gravity="left"
+            android:id="@+id/linearLayout1"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star_border"
+                android:layout_weight="10"
+                android:tint="#ff808080"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star_border"
+                android:layout_weight="10"
+                android:tint="#ff808080"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star_border"
+                android:layout_weight="10"
+                android:tint="#ff808080"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star_border"
+                android:layout_weight="10"
+                android:tint="#ff808080"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star_border"
+                android:layout_weight="10"
+                android:tint="#ff808080"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+        </LinearLayout>
+        <Button
+            android:text="Submit"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@drawable/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_button"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/reviewTextContainer"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tell us what you think"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#808080"
+            android:id="@+id/textView1"
+            android:layout_marginBottom="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#808080"
+            android:background="@drawable/textbox_white"
+            android:id="@+id/review_field"
+            android:hint="Tell us what you think"
+            android:padding="10dp" />
+        <Button
+            android:text="Submit"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@drawable/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitReview_button"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#808080"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="170dp"
+        android:id="@+id/textView1"
+        android:layout_marginBottom="30dp" />
+</LinearLayout>

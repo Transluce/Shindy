@@ -7,6 +7,10 @@ using Java.Lang;
 using Android.Graphics;
 using System.Net;
 using Android.Animation;
+using Android.Content;
+using System.Text;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Shindy.Droid
 {
@@ -14,7 +18,7 @@ namespace Shindy.Droid
     {
         const string ARG_PAGE = "ARG_PAGE";
         private int mPage;
-
+        private List<Event> EventList;
         public static PageFragment newInstance(int page)
         {
             var args = new Bundle();
@@ -46,58 +50,94 @@ namespace Shindy.Droid
                     TextView shindigTip = view.FindViewById<TextView>(Resource.Id.myShindigsTip_label);
                     shindigTip.SetTypeface(font_italic, TypefaceStyle.Normal);
                     //View
-                    bool[] isExpanded = new bool[5];
+                    
+                   // Uri uri = new Uri("http://192.168.1.5/ShindyAdmin/application/controllers/api/events_ws.php");
+                   // WebClient client = new WebClient();
+                   // client.UploadValuesAsync(uri,new System.Collections.Specialized.NameValueCollection() { { "intent","evtsrch"},{ "receive","jmbolibas@yahoo.com"} });
+                   // client.UploadValuesCompleted += Client_UploadValuesCompleted;
                     for (int i = 0; i < 5; i++)
                     {
 
                         ViewGroup eventContainer = (ViewGroup)view.FindViewById<LinearLayout>(Resource.Id.events_container);
                         ViewGroup inviteContainer = (ViewGroup)view.FindViewById<LinearLayout>(Resource.Id.invites_container);
                         View eventLayout = LayoutInflater.From(this.Activity).Inflate(Resource.Layout.Event_template, null);
-                        ViewGroup eventDetailsContainer = (ViewGroup)eventLayout.FindViewById<LinearLayout>(Resource.Id.bar);
+                        ViewGroup eventDetailsContainer = (ViewGroup)eventLayout.FindViewById<LinearLayout>(Resource.Id.detailContainer);
                         ViewGroup eventTemplate = (ViewGroup)eventLayout.FindViewById<LinearLayout>(Resource.Id.eventExpandContainer);
                         View details_expand = LayoutInflater.From(this.Activity).Inflate(Resource.Layout.EventDetails_expand, null);
-                        // details_expand.TranslationY = -100;
-                        // details_expand.TranslationZ = -100;
-                        // eventDetailsContainer.TranslationY = -100;
-                        // eventDetailsContainer.TranslationZ = -100;
+                        ImageButton details_button = details_expand.FindViewById<ImageButton>(Resource.Id.details_button);
+                        details_button.Click += Details_button_Click;
                         details_expand.Visibility = ViewStates.Gone;
-                        var interpolator = new Android.Views.Animations.OvershootInterpolator(1);
+                        bool[] isExpandedEvent = new bool[5];
+                        bool[] isExpandedInvite = new bool[5];
                         eventDetailsContainer.AddView(details_expand);
-                        isExpanded[i] = false;
+                        isExpandedEvent[i] = false;
+                        isExpandedInvite[i] = false;
                         eventLayout.Tag = i;
-                        eventLayout.Click+=(sender,e) =>
-                        {
-                           switch(isExpanded[(int)eventLayout.Tag])
-                            {
-                                case false:
-                                    isExpanded[(int)eventLayout.Tag] = true;
-                                    details_expand.Visibility = ViewStates.Visible;
-                                    int widthSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
-                                    int heightSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
-                                    details_expand.Measure(widthSpec, heightSpec);
-                                    ValueAnimator expandAnimator = slideAnimator(0, details_expand.MeasuredHeight, details_expand);
-                                    expandAnimator.Start();
+                        eventLayout.Click += (sender, e) =>
+                          {
+                              switch (isExpandedEvent[(int)eventLayout.Tag])
+                              {
+                                  case false:
+                                      isExpandedEvent[(int)eventLayout.Tag] = true;
+                                      details_expand.Visibility = ViewStates.Visible;
+                                      int widthSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
+                                      int heightSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
+                                      details_expand.Measure(widthSpec, heightSpec);
+                                      ValueAnimator expandAnimator = slideAnimator(0, details_expand.MeasuredHeight, details_expand);
+                                      expandAnimator.Start();
 
-                                    break;
-                                case true:
-                                    isExpanded[(int)eventLayout.Tag] = false;
-                                    int finalHeight = details_expand.Height;
-                                    ValueAnimator collapseAnimator = slideAnimator(finalHeight, 0,details_expand);
-                                    collapseAnimator.Start();
-                                    collapseAnimator.AnimationEnd += (sender2, e2) =>
+                                      break;
+                                  case true:
+                                      isExpandedEvent[(int)eventLayout.Tag] = false;
+                                      int finalHeight = details_expand.Height;
+                                      ValueAnimator collapseAnimator = slideAnimator(finalHeight, 0, details_expand);
+                                      collapseAnimator.Start();
+                                      collapseAnimator.AnimationEnd += (sender2, e2) =>
+                                        {
+                                            details_expand.Visibility = ViewStates.Gone;
+                                        };
+                                      break;
+                              }
+
+                          };
+                        View inviteLayout = LayoutInflater.From(this.Activity).Inflate(Resource.Layout.Invites_template, null);
+                        inviteLayout.Tag = i;
+                        ViewGroup inviteDetailsContainer = (ViewGroup)(inviteLayout.FindViewById<LinearLayout>(Resource.Id.detailContainer));
+                        View inviteDetails_expand = LayoutInflater.From(this.Activity).Inflate(Resource.Layout.EventDetails_expand, null);
+                        inviteDetails_expand.Visibility = ViewStates.Gone;
+                        inviteDetailsContainer.AddView(inviteDetails_expand);
+                        inviteLayout.Click += (sender3, e3) =>
+                          {
+                             // Toast.MakeText(this.Context, inviteLayout.Tag.ToString(), ToastLength.Short).Show();
+                              switch (isExpandedInvite[(int)inviteLayout.Tag])
+                              {
+                                  case false:
+                                      
+                                      isExpandedInvite[(int)inviteLayout.Tag] = true;
+                                      inviteDetails_expand.Visibility = ViewStates.Visible;
+                                      int widthSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
+                                      int heightSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
+                                      inviteDetails_expand.Measure(widthSpec, heightSpec);
+                                      ValueAnimator expandAnimator = slideAnimator(0, inviteDetails_expand.MeasuredHeight, inviteDetails_expand);
+                                      expandAnimator.Start();
+
+                                      break;
+                                  case true:
+                                      isExpandedInvite[(int)inviteLayout.Tag] = false;
+                                      int finalHeight = inviteDetails_expand.Height;
+                                      ValueAnimator collapseAnimator = slideAnimator(finalHeight, 0, inviteDetails_expand);
+                                      collapseAnimator.Start();
+                                      collapseAnimator.AnimationEnd += (sender2, e2) =>
                                       {
-                                          details_expand.Visibility = ViewStates.Gone;
+                                          inviteDetails_expand.Visibility = ViewStates.Gone;
                                       };
-
-                                    // eventDetailsContainer.RemoveView(details_expand);
-                                    break;
-                            }
-                          
-                        };
-                        View inviteLayout= LayoutInflater.From(this.Activity).Inflate(Resource.Layout.Invites_template, null);
-                        // ImageView eventImage = eventLayout.FindViewById<ImageView>(Resource.Id.eventPic);
-                        // eventImage.SetImageBitmap(GetImageBitmapFromUrl("https://coresites-cdn.factorymedia.com/mpora_new/wp-content/uploads/2015/12/iStock_000052710440_Medium.jpg"));
-                        // eventLayout.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+                                      break;
+                              }
+                              // ImageView eventImage = eventLayout.FindViewById<ImageView>(Resource.Id.eventPic);
+                              // eventImage.SetImageBitmap(GetImageBitmapFromUrl("https://coresites-cdn.factorymedia.com/mpora_new/wp-content/uploads/2015/12/iStock_000052710440_Medium.jpg"));
+                              // eventLayout.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+                             
+                          };
                         eventContainer.AddView(eventLayout);
                         inviteContainer.AddView(inviteLayout);
                     }
@@ -118,6 +158,119 @@ namespace Shindy.Droid
             
             
             
+        }
+
+        private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
+        {
+            string json = Encoding.UTF8.GetString(e.Result);
+            EventList = JsonConvert.DeserializeObject<List<Event>>(json);
+            bool[] isExpandedEvent = new bool[5];
+            bool[] isExpandedInvite = new bool[5];
+            for (int i = 0; i < EventList.Count; i++)
+            {
+                ViewGroup eventContainer = (ViewGroup)View.FindViewById<LinearLayout>(Resource.Id.events_container);
+                ViewGroup inviteContainer = (ViewGroup)View.FindViewById<LinearLayout>(Resource.Id.invites_container);
+                View eventLayout = LayoutInflater.From(this.Activity).Inflate(Resource.Layout.Event_template, null);
+                ViewGroup eventDetailsContainer = (ViewGroup)eventLayout.FindViewById<LinearLayout>(Resource.Id.detailContainer);
+                ViewGroup eventTemplate = (ViewGroup)eventLayout.FindViewById<LinearLayout>(Resource.Id.eventExpandContainer);
+                View details_expand = LayoutInflater.From(this.Activity).Inflate(Resource.Layout.EventDetails_expand, null);
+                ImageButton details_button = details_expand.FindViewById<ImageButton>(Resource.Id.details_button);
+                TextView title, inviter, date, expDate, reqMale, reqFemale;
+                title = eventLayout.FindViewById<TextView>(Resource.Id.eventTitle);
+                inviter = eventLayout.FindViewById<TextView>(Resource.Id.eventInviter);
+                date = eventLayout.FindViewById<TextView>(Resource.Id.eventDate);
+                expDate = eventLayout.FindViewById<TextView>(Resource.Id.eventExpiration);
+                reqMale = eventLayout.FindViewById<TextView>(Resource.Id.reqMale);
+                reqFemale = eventLayout.FindViewById<TextView>(Resource.Id.reqFemale);
+                //Passing Data
+                title.Text = EventList[i].event_name;
+
+                details_button.Click += Details_button_Click;
+                details_expand.Visibility = ViewStates.Gone;
+                eventDetailsContainer.AddView(details_expand);
+                isExpandedEvent[i] = false;
+                isExpandedInvite[i] = false;
+                eventLayout.Tag = i;
+                eventLayout.Click += (senderr, e1) =>
+                {
+                    switch (isExpandedEvent[(int)eventLayout.Tag])
+                    {
+                        case false:
+                            isExpandedEvent[(int)eventLayout.Tag] = true;
+                            details_expand.Visibility = ViewStates.Visible;
+                            int widthSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
+                            int heightSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
+                            details_expand.Measure(widthSpec, heightSpec);
+                            ValueAnimator expandAnimator = slideAnimator(0, details_expand.MeasuredHeight, details_expand);
+                            expandAnimator.Start();
+
+                            break;
+                        case true:
+                            isExpandedEvent[(int)eventLayout.Tag] = false;
+                            int finalHeight = details_expand.Height;
+                            ValueAnimator collapseAnimator = slideAnimator(finalHeight, 0, details_expand);
+                            collapseAnimator.Start();
+                            collapseAnimator.AnimationEnd += (sender2, e2) =>
+                            {
+                                details_expand.Visibility = ViewStates.Gone;
+                            };
+                            break;
+                    }
+
+                };
+                View inviteLayout = LayoutInflater.From(this.Activity).Inflate(Resource.Layout.Invites_template, null);
+                inviteLayout.Tag = i;
+                ViewGroup inviteDetailsContainer = (ViewGroup)(inviteLayout.FindViewById<LinearLayout>(Resource.Id.detailContainer));
+                View inviteDetails_expand = LayoutInflater.From(this.Activity).Inflate(Resource.Layout.EventDetails_expand, null);
+                inviteDetails_expand.Visibility = ViewStates.Gone;
+                inviteDetailsContainer.AddView(inviteDetails_expand);
+                inviteLayout.Click += (sender3, e3) =>
+                {
+                    // Toast.MakeText(this.Context, inviteLayout.Tag.ToString(), ToastLength.Short).Show();
+                    switch (isExpandedInvite[(int)inviteLayout.Tag])
+                    {
+                        case false:
+
+                            isExpandedInvite[(int)inviteLayout.Tag] = true;
+                            inviteDetails_expand.Visibility = ViewStates.Visible;
+                            int widthSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
+                            int heightSpec = View.MeasureSpec.MakeMeasureSpec(0, MeasureSpecMode.Unspecified);
+                            inviteDetails_expand.Measure(widthSpec, heightSpec);
+                            ValueAnimator expandAnimator = slideAnimator(0, inviteDetails_expand.MeasuredHeight, inviteDetails_expand);
+                            expandAnimator.Start();
+
+                            break;
+                        case true:
+                            isExpandedInvite[(int)inviteLayout.Tag] = false;
+                            int finalHeight = inviteDetails_expand.Height;
+                            ValueAnimator collapseAnimator = slideAnimator(finalHeight, 0, inviteDetails_expand);
+                            collapseAnimator.Start();
+                            collapseAnimator.AnimationEnd += (sender2, e2) =>
+                            {
+                                inviteDetails_expand.Visibility = ViewStates.Gone;
+                            };
+                            break;
+                    }
+                    // ImageView eventImage = eventLayout.FindViewById<ImageView>(Resource.Id.eventPic);
+                    // eventImage.SetImageBitmap(GetImageBitmapFromUrl("https://coresites-cdn.factorymedia.com/mpora_new/wp-content/uploads/2015/12/iStock_000052710440_Medium.jpg"));
+                    // eventLayout.LayoutParameters = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, LinearLayout.LayoutParams.WrapContent);
+
+                };
+                eventContainer.AddView(eventLayout);
+                inviteContainer.AddView(inviteLayout);
+            }
+        }
+
+        private void Client_DownloadDataCompleted(object sender, DownloadDataCompletedEventArgs e)
+        {
+            
+        }
+
+        private void Details_button_Click(object sender, EventArgs e)
+        {
+
+            Activity.StartActivity(typeof(EventDetailsActivity));
+            Activity.OverridePendingTransition(Resource.Animation.slideLeft_tohide, Resource.Animation.slideLeft);
         }
 
         private ValueAnimator slideAnimator(int start, int end,View Layout)

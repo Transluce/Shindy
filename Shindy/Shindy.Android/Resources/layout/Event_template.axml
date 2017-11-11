@@ -38,7 +38,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="58"
-            android:paddingLeft="10dp">
+            android:paddingLeft="10dp"
+            android:id="@+id/reqFemale">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,7 +75,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/reqMale" />
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -91,7 +93,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/reqMale" />
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -103,8 +106,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="spots"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_gravity="bottom" />
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/smallUIText" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -113,8 +116,4 @@
         android:id="@+id/detailContainer"
         android:minWidth="25px"
         android:minHeight="25px" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bar" />
 </LinearLayout>

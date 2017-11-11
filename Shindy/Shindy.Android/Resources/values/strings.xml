@@ -11,4 +11,5 @@
     <item>Premium Account</item>
     <item>Logout</item>
   </string-array>
+  <string name="google_maps_key">AIzaSyBIDTBOM_GNcFPIIWR4xevsil4m6CpQZAM</string>
 </resources>

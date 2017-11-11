@@ -46,7 +46,16 @@
     <item name="colorAccent">#FDCA2E</item>
     <item name="colorControlNormal">#FDCA2E</item>
   </style>
+  <style name="ShindyFriendsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimaryDark">#BDBDBD</item>
+    <item name="colorAccent">#FDCA2E</item>
+    <item name="colorControlNormal">#808080</item>
+  </style>
   <style name="MenuStyle">
     <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+  </style>
+  <style name="SearchView" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorControlNormal">#808080</item>
   </style>
 </resources>

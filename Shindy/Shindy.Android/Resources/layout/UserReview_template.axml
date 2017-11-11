@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="15dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="50"
+            android:gravity="left"
+            android:id="@+id/linearLayout1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star"
+                android:layout_weight="10"
+                android:tint="#fffaca51"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star"
+                android:layout_weight="10"
+                android:tint="#fffaca51"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star"
+                android:layout_weight="10"
+                android:tint="#fffaca51"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star"
+                android:layout_weight="10"
+                android:tint="#fffaca51"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_star"
+                android:layout_weight="10"
+                android:tint="#fffaca51"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView1" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.0"
+            android:textSize="@dimen/smallUIText"
+            android:textColor="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="@dimen/smallUIText"
+            android:textColor="#808080"
+            android:id="@+id/textView1"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="@dimen/smallUIText"
+            android:textColor="#808080"
+            android:id="@+id/textView1"
+            android:gravity="right" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enim nec dui nunc mattis enim ut tellus elementum sagittis. Quam viverra orci sagittis eu volutpat odio. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#808080" />
+</LinearLayout>
