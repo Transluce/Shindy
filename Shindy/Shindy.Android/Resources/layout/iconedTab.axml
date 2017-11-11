@@ -12,5 +12,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/tab"
         android:gravity="center"
-        android:textSize="@dimen/smallUIText" />
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 </LinearLayout>

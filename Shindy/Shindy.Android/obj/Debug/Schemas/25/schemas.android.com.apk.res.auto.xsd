@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>11/9/2017 5:55:05 AM</xs:documentation>
+    <xs:documentation>11/12/2017 5:06:30 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -209,6 +209,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -376,6 +377,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -405,11 +407,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -455,6 +459,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -619,6 +624,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -1193,6 +1199,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -1384,6 +1391,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -1575,6 +1583,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -2102,6 +2111,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -2452,6 +2462,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -2481,11 +2492,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -2531,6 +2544,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -2695,6 +2709,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3156,6 +3171,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -3185,11 +3201,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -3235,6 +3253,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -3399,6 +3418,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3718,6 +3738,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -3747,11 +3768,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -3797,6 +3820,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -3961,6 +3985,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4283,6 +4308,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -4312,11 +4338,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -4362,6 +4390,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -4526,6 +4555,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4845,6 +4875,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -4874,11 +4905,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -4924,6 +4957,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -5088,6 +5122,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5449,6 +5484,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -5640,6 +5676,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -5831,6 +5868,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -6022,6 +6060,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -6213,6 +6252,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -6404,6 +6444,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -6595,6 +6636,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -6786,6 +6828,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -6977,6 +7020,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -7168,6 +7212,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -7359,6 +7404,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -7785,6 +7831,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -7814,11 +7861,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -7864,6 +7913,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -8028,6 +8078,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8347,6 +8398,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -8376,11 +8428,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -8426,6 +8480,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -8590,6 +8645,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9028,6 +9084,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -9057,11 +9114,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -9107,6 +9166,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -9271,6 +9331,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9632,6 +9693,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -9838,6 +9900,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -9867,11 +9930,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -9917,6 +9982,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -10081,6 +10147,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10400,6 +10467,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -10429,11 +10497,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -10479,6 +10549,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -10643,6 +10714,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11072,6 +11144,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -11263,6 +11336,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -11454,6 +11528,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -11645,6 +11720,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -11836,6 +11912,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -11985,6 +12062,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -12014,11 +12092,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -12064,6 +12144,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -12228,6 +12309,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12547,6 +12629,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -12576,11 +12659,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -12626,6 +12711,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -12790,6 +12876,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13170,6 +13257,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -13199,11 +13287,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -13249,6 +13339,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -13413,6 +13504,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13732,6 +13824,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -13761,11 +13854,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -13811,6 +13906,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -13975,6 +14071,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14384,6 +14481,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -14413,11 +14511,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -14463,6 +14563,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -14627,6 +14728,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15219,6 +15321,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -15248,11 +15351,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -15298,6 +15403,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -15462,6 +15568,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -15860,6 +15967,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -15889,11 +15997,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -15939,6 +16049,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -16103,6 +16214,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16623,6 +16735,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -16652,11 +16765,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -16702,6 +16817,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -16866,6 +16982,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17386,6 +17503,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -17415,11 +17533,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -17465,6 +17585,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -17629,6 +17750,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17948,6 +18070,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -17977,11 +18100,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -18027,6 +18152,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -18191,6 +18317,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18629,6 +18756,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -18658,11 +18786,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -18708,6 +18838,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -18872,6 +19003,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19352,6 +19484,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -19543,6 +19676,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -19737,6 +19871,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -19766,11 +19901,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -19816,6 +19953,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -19980,6 +20118,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20418,6 +20557,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -20447,11 +20587,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -20497,6 +20639,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -20661,6 +20804,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21099,6 +21243,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -21128,11 +21273,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -21178,6 +21325,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -21342,6 +21490,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21925,6 +22074,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -21954,11 +22104,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -22004,6 +22156,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -22168,6 +22321,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22529,6 +22683,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -22678,6 +22833,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -22707,11 +22863,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -22757,6 +22915,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -22921,6 +23080,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23605,6 +23765,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -23634,11 +23795,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -23684,6 +23847,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -23848,6 +24012,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@string/abc_action_bar_home_description" />
             <xs:enumeration value="@string/abc_action_bar_home_description_format" />
             <xs:enumeration value="@string/abc_action_bar_home_subtitle_description_format" />
@@ -24346,6 +24511,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -24495,6 +24661,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -24524,11 +24691,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -24574,6 +24743,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -24738,6 +24908,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25057,6 +25228,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -25086,11 +25258,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -25136,6 +25310,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -25300,6 +25475,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25802,6 +25978,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -25831,11 +26008,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -25881,6 +26060,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -26045,6 +26225,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26565,6 +26746,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -26594,11 +26776,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -26644,6 +26828,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -26808,6 +26993,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27246,6 +27432,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -27275,11 +27462,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -27325,6 +27514,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -27489,6 +27679,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28009,6 +28200,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -28038,11 +28230,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -28088,6 +28282,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -28252,6 +28447,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28613,6 +28809,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -28804,6 +29001,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -28953,6 +29151,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -28982,11 +29181,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -29032,6 +29233,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -29196,6 +29398,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29515,6 +29718,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -29544,11 +29748,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -29594,6 +29800,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -29758,6 +29965,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30119,6 +30327,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -30526,6 +30735,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -30717,6 +30927,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -30908,6 +31119,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -31114,6 +31326,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -31305,6 +31518,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -31496,6 +31710,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -31687,6 +31902,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -31878,6 +32094,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -32228,6 +32445,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -32257,11 +32475,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -32307,6 +32527,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -32471,6 +32692,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33033,6 +33255,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -33501,6 +33724,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -33692,6 +33916,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -33883,6 +34108,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -34074,6 +34300,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -34265,6 +34492,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -34456,6 +34684,7 @@
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
             <xs:enumeration value="@dimen/largeUIText" />
+            <xs:enumeration value="@dimen/largeUIText2" />
             <xs:enumeration value="@dimen/mediumUIText" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_height" />
             <xs:enumeration value="@dimen/mr_controller_volume_group_list_item_icon_size" />
@@ -34605,6 +34834,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -34634,11 +34864,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -34684,6 +34916,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -34848,6 +35081,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35368,6 +35602,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -35397,11 +35632,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -35447,6 +35684,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -35611,6 +35849,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -35930,6 +36169,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -35959,11 +36199,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -36009,6 +36251,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -36173,6 +36416,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36757,6 +37001,7 @@
             <xs:enumeration value="@drawable/avd_hide_password" />
             <xs:enumeration value="@drawable/avd_show_password" />
             <xs:enumeration value="@drawable/bg" />
+            <xs:enumeration value="@drawable/blueborder_button" />
             <xs:enumeration value="@drawable/borderonly_button" />
             <xs:enumeration value="@drawable/card" />
             <xs:enumeration value="@drawable/common_full_open_on_phone" />
@@ -36786,11 +37031,13 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/facebook_logo" />
             <xs:enumeration value="@drawable/fblogin_button" />
             <xs:enumeration value="@drawable/ic_add_circle" />
             <xs:enumeration value="@drawable/ic_arrow_back" />
             <xs:enumeration value="@drawable/ic_audiotrack_dark" />
             <xs:enumeration value="@drawable/ic_audiotrack_light" />
+            <xs:enumeration value="@drawable/ic_chat" />
             <xs:enumeration value="@drawable/ic_check" />
             <xs:enumeration value="@drawable/ic_close" />
             <xs:enumeration value="@drawable/ic_details" />
@@ -36836,6 +37083,7 @@
             <xs:enumeration value="@drawable/ic_heart_outline" />
             <xs:enumeration value="@drawable/ic_like" />
             <xs:enumeration value="@drawable/ic_logout" />
+            <xs:enumeration value="@drawable/ic_mail" />
             <xs:enumeration value="@drawable/ic_male" />
             <xs:enumeration value="@drawable/ic_media_pause_dark" />
             <xs:enumeration value="@drawable/ic_media_pause_light" />
@@ -37000,6 +37248,7 @@
             <xs:enumeration value="@drawable/pic" />
             <xs:enumeration value="@drawable/profilepic" />
             <xs:enumeration value="@drawable/textbox_white" />
+            <xs:enumeration value="@drawable/yellow_button" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

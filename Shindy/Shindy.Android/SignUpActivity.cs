@@ -93,7 +93,7 @@ namespace Shindy.Droid
                 gender_radioButton = FindViewById<RadioButton>(id);
                 selectedGender = gender_radioButton.Text == "Male" ? "0" : gender_radioButton.Text == "Female" ? "1" : "0";
                 WebClient client = new WebClient();
-                Uri uri = new Uri("http://192.168.1.5/ShindyAdmin/application/controllers/api/users_ws.php");
+                Uri uri = new Uri("http://192.168.1.5/shindyAdmin/application/controllers/api/users_ws.php");
                 client.UploadValuesAsync(uri, new System.Collections.Specialized.NameValueCollection() { { "email", email.Text }, { "intent", "signup" }, { "pass", password.Text }, { "at", "0" }, { "fn", firstName.Text }, { "ln", lastName.Text }, { "gen", selectedGender }, { "bday", date }, { "zip", zipCode.Text } });
                 client.UploadValuesCompleted += Client_UploadValuesCompleted;
             }

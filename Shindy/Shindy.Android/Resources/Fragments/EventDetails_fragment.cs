@@ -41,8 +41,14 @@ namespace Shindy.Droid.Resources.Fragments
             var imageSlider = view.FindViewById<ViewPager>(Resource.Id.imageSlider);
             Bitmap[] images = new Bitmap[] { GetImageBitmapFromUrl("http://"+MainActivity.ip+"/shindyAdmin/assets/images/rock.jpg"),GetImageBitmapFromUrl("http://"+MainActivity.ip+"/shindyAdmin/assets/images/car1.jpg"), GetImageBitmapFromUrl("http://" + MainActivity.ip + "/shindyAdmin/assets/images/car2.jpg"), GetImageBitmapFromUrl("http://" + MainActivity.ip + "/shindyAdmin/assets/images/car3.jpg") };
             ImageAdapter imageAdapter = new ImageAdapter(this.Context,images );
+            //Buttons
             var inviteFriends_button = view.FindViewById<ImageButton>(Resource.Id.sendInvite_button);
+            var myInvites_button = view.FindViewById<ImageButton>(Resource.Id.myInvites_button);
+            var checkout_button = view.FindViewById<ImageButton>(Resource.Id.checkout_button);
+            checkout_button.Click += Checkout_button_Click;
+            myInvites_button.Click += MyInvites_button_Click;
             inviteFriends_button.Click += InviteFriends_button_Click;
+
             imageSlider.Adapter = imageAdapter;
             var adapter = new EventDetailsPagerAdapter(this.Context, Activity.SupportFragmentManager,new String[] { "Details","Discussion","Reviews"},3);
             pager.Adapter = adapter;
@@ -54,6 +60,18 @@ namespace Shindy.Droid.Resources.Fragments
                 tab.SetCustomView(adapter.GetTabView(i));
             }
             return view;
+        }
+
+        private void Checkout_button_Click(object sender, EventArgs e)
+        {
+            Activity.StartActivity(typeof(CheckoutActivity));
+            Activity.OverridePendingTransition(Resource.Animation.slideLeft_tohide, Resource.Animation.slideLeft);
+        }
+
+        private void MyInvites_button_Click(object sender, EventArgs e)
+        {
+            Activity.StartActivity(typeof(MyInvitesActivity));
+            Activity.OverridePendingTransition(Resource.Animation.slideLeft_tohide, Resource.Animation.slideLeft);
         }
 
         private void InviteFriends_button_Click(object sender, EventArgs e)

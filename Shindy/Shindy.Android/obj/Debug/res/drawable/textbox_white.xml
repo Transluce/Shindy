@@ -1,1 +1,1 @@
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><shape><solid android:color="#FFFFFF" /><corners android:radius="0dp" /><stroke android:width="0.5dp" android:color="#707070" /></shape></item></layer-list>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><shape><solid android:color="#FFFFFF" /><corners android:radius="5dp" /><stroke android:width="0.5dp" android:color="#707070" /></shape></item></layer-list>

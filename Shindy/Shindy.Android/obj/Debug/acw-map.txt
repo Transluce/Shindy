@@ -1,3 +1,11 @@
+Shindy.Droid.CheckoutActivity, Shindy.Android;md5f694c56b979be6c4826b46c2140c5ab5.CheckoutActivity
+Shindy.Droid.CheckoutActivity, Shindy.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f694c56b979be6c4826b46c2140c5ab5.CheckoutActivity
+Shindy.Droid.CheckoutActivity;md5f694c56b979be6c4826b46c2140c5ab5.CheckoutActivity
+shindy.droid.CheckoutActivity;md5f694c56b979be6c4826b46c2140c5ab5.CheckoutActivity
+Shindy.Droid.MyInvitesActivity, Shindy.Android;md5f694c56b979be6c4826b46c2140c5ab5.MyInvitesActivity
+Shindy.Droid.MyInvitesActivity, Shindy.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f694c56b979be6c4826b46c2140c5ab5.MyInvitesActivity
+Shindy.Droid.MyInvitesActivity;md5f694c56b979be6c4826b46c2140c5ab5.MyInvitesActivity
+shindy.droid.MyInvitesActivity;md5f694c56b979be6c4826b46c2140c5ab5.MyInvitesActivity
 Shindy.Droid.InviteFriendsActivity, Shindy.Android;md5f694c56b979be6c4826b46c2140c5ab5.InviteFriendsActivity
 Shindy.Droid.InviteFriendsActivity, Shindy.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f694c56b979be6c4826b46c2140c5ab5.InviteFriendsActivity
 Shindy.Droid.InviteFriendsActivity;md5f694c56b979be6c4826b46c2140c5ab5.InviteFriendsActivity
@@ -74,6 +82,14 @@ Shindy.Droid.Resources.Fragments.Home_fragment, Shindy.Android;md5277ebd5844d9da
 Shindy.Droid.Resources.Fragments.Home_fragment, Shindy.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5277ebd5844d9dadaf706111184bc3d14.Home_fragment
 Shindy.Droid.Resources.Fragments.Home_fragment;md5277ebd5844d9dadaf706111184bc3d14.Home_fragment
 shindy.droid.resources.fragments.Home_fragment;md5277ebd5844d9dadaf706111184bc3d14.Home_fragment
+Shindy.Droid.Resources.Fragments.Checkout_fragment, Shindy.Android;md5277ebd5844d9dadaf706111184bc3d14.Checkout_fragment
+Shindy.Droid.Resources.Fragments.Checkout_fragment, Shindy.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5277ebd5844d9dadaf706111184bc3d14.Checkout_fragment
+Shindy.Droid.Resources.Fragments.Checkout_fragment;md5277ebd5844d9dadaf706111184bc3d14.Checkout_fragment
+shindy.droid.resources.fragments.Checkout_fragment;md5277ebd5844d9dadaf706111184bc3d14.Checkout_fragment
+Shindy.Droid.Resources.Fragments.MyInvites_fragment, Shindy.Android;md5277ebd5844d9dadaf706111184bc3d14.MyInvites_fragment
+Shindy.Droid.Resources.Fragments.MyInvites_fragment, Shindy.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5277ebd5844d9dadaf706111184bc3d14.MyInvites_fragment
+Shindy.Droid.Resources.Fragments.MyInvites_fragment;md5277ebd5844d9dadaf706111184bc3d14.MyInvites_fragment
+shindy.droid.resources.fragments.MyInvites_fragment;md5277ebd5844d9dadaf706111184bc3d14.MyInvites_fragment
 Shindy.Droid.Resources.Fragments.InviteFriends_fragment, Shindy.Android;md5277ebd5844d9dadaf706111184bc3d14.InviteFriends_fragment
 Shindy.Droid.Resources.Fragments.InviteFriends_fragment, Shindy.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5277ebd5844d9dadaf706111184bc3d14.InviteFriends_fragment
 Shindy.Droid.Resources.Fragments.InviteFriends_fragment;md5277ebd5844d9dadaf706111184bc3d14.InviteFriends_fragment

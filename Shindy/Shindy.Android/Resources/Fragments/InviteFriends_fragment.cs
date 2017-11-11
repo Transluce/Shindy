@@ -38,7 +38,7 @@ namespace Shindy.Droid.Resources.Fragments
             View view = inflater.Inflate(Resource.Layout.InviteFriends, container, false);
             var pager = view.FindViewById<ViewPager>(Resource.Id.pager);
             var tabLayout = view.FindViewById<TabLayout>(Resource.Id.tabs);
-            var adapter = new InviteFriendsPagerAdapter(this.Context, Activity.SupportFragmentManager,new String[] { "SEARCH","INTERESTS","FB","INVITE"},4,new int[] { Resource.Drawable.ic_search,Resource.Drawable.ic_heart_outline,Resource.Drawable.ic_fb,Resource.Drawable.ic_search});
+            var adapter = new InviteFriendsPagerAdapter(this.Context, Activity.SupportFragmentManager,new String[] { "SEARCH","INTERESTS","FB","INVITE"},4,new int[] { Resource.Drawable.ic_search,Resource.Drawable.ic_heart_outline,Resource.Drawable.ic_fb,Resource.Drawable.ic_mail});
             pager.Adapter = adapter;
             tabLayout.SetupWithViewPager(pager);
             tabLayout.SetSelectedTabIndicatorColor(Color.Rgb(253, 202, 46));

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
   <dimen name="largeUIText">40sp</dimen>
+  <dimen name="largeUIText2">30sp</dimen>
   <dimen name="mediumUIText">20sp</dimen>
   <dimen name="smallUIText">10sp</dimen>
 </resources>

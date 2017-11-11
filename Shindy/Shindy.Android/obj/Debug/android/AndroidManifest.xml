@@ -10,6 +10,8 @@
   <application android:label="Shindy" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_key" />
+    <activity android:label="Home" android:name="md5f694c56b979be6c4826b46c2140c5ab5.CheckoutActivity" />
+    <activity android:label="Home" android:name="md5f694c56b979be6c4826b46c2140c5ab5.MyInvitesActivity" />
     <activity android:label="Home" android:name="md5f694c56b979be6c4826b46c2140c5ab5.InviteFriendsActivity" />
     <activity android:label="Home" android:name="md5f694c56b979be6c4826b46c2140c5ab5.EventDetailsActivity" />
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="Shindy" android:theme="@style/MainTheme" android:name="md5f694c56b979be6c4826b46c2140c5ab5.MainActivity">

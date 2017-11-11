@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/facebook_logo"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link your Facebook Account and Contacts"
+                android:textColor="#808080"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="center"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite FB friends to events or share your adventures"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:id="@+id/textView1"
+                android:textSize="@dimen/smallUIText"
+                android:layout_marginBottom="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:hint="Email"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:hint="Password"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/editText1"
+                android:layout_marginBottom="40dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN TO FACEBOOK"
+                android:textSize="@dimen/smallUIText"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/fblogin_button" />
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

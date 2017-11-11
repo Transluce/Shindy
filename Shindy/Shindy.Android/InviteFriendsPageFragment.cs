@@ -46,7 +46,7 @@ namespace Shindy.Droid
                     view = inflater.Inflate(Resource.Layout.MyShindigs, container, false);
                     return view;
                 case 3:
-                    view = inflater.Inflate(Resource.Layout.MyShindigs, container, false);
+                    view = inflater.Inflate(Resource.Layout.InAppFBLogin, container, false);
                     return view;
                 case 4:
                     view = inflater.Inflate(Resource.Layout.MyShindigs, container, false);
